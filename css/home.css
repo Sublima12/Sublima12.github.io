@@ -1,0 +1,105 @@
+﻿html,body{
+	background-color: #f4f4f4;
+    margin: 0;
+}
+/* style Header début*/
+.accent {
+	padding-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: whitesmoke;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom: 0px;
+	box-shadow: 0px -1px 10px #383838;
+	font-size: 30px;
+	font-style: cambria;
+}
+header {
+	margin: 0;
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		header .menu-header {
+	display:flex;
+	align-items: center;
+	}
+	header img {
+	height: 30px;
+	width: 50px; 
+	}
+header h1 {
+	font-size: 22px;
+	text-decoration:none;
+	color: black;
+}
+			
+.liste-menu {
+		display:flex;
+		justify-content: space-evenly;
+		list-style: none;
+	color: rgb(13, 15, 15);
+ 	/*margin: 10px auto;*/
+}
+.liste-menu li a {
+	font-family: Cambria;
+	text-decoration: none;
+	color: black;
+}
+/* style Header fin
+----------------------------------------*/
+ 
+
+
+/*style pour les titre et section debut */
+.introduction {
+	margin: 30px;
+	padding: 1px;
+	font-size: 14px;
+	background-color: white;
+border-radius:10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* style pour les titre et section fin
+----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+	/* pied de la page*/
+	
+	footer {
+		font-size: 14px;
+			color: rgb(0, 0, 0);
+			font-family: Cambria;
+			font-display: auto;
+			font-weight: normal;
+			text-align: center;
+            background-color: #2E2E2E;
+            padding: 1px;
+            }
+            .click{
+					color: #E40602;
+					text-decoration:none;
+					mouse: pointer;
+				}
+
+				
+				
+
+   
