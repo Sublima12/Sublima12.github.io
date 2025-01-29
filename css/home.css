@@ -146,9 +146,9 @@ section {
 				.resau-social {
 				    bottom: 5px;
 				    left: 40%;
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
-	justify-content: spcace-evenly;
+	justify-content: spcace-evenly;*/
 }
 
 
@@ -156,8 +156,8 @@ section {
     background-color: transparent;
 	border: none;
 	border-radius: 1px;
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 	}
 
 				

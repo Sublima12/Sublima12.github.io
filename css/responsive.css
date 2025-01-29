@@ -163,12 +163,12 @@ h1 {
 					color: #E40602;
 					text-decoration:none;
 				}
-				footer .resau-social {
-				    width: 20%;
+				.resau-social {
+				    bottom: 5px;
 				    left: 30%;
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
-	justify-content: spcace-evenly;
+	justify-content: spcace-evenly;*/
 }
 
 
