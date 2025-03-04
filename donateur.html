@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     	<title>Donate</title>
-  <link rel="icon" href="icon/sublima.png"  />
+  <link rel="icon" href="icon/sublima.ico"/>
   <link rel="stylesheet" type="text/css" href="css/home.css" media="all" />
   <link rel="stylesheet" type="text/css" href="css/body.css"/>
   <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
@@ -17,31 +17,40 @@
 <header>
 
 
-    <div class="menu-header">
-     <a href="index.html"><img src="icon/sublima.png" class="logo" alt=""></a>
+<div class="menu-header">
+     <a href="index.html"><img src="icon/sublima.png" class="logo" alt="Home"></a>
      	
-     <h1 class="titre1">SUBLIMA</h1>
+     <h1 class="sublima">SUBLIMA</h1>
    </div>
    
-<div>
-	<ul>
-   		<ul class="menu_deroulant"><a  class="menu" href="#">MENU</a>
-			<ul class="liste-menu" target="self" >
-      			<li class="liste"><a href="index.html" target="self" >Acceuille</a></li>
-      			<li class="liste"><a href="produit.html" target="self" >Produit</a></li>
-     			 <li class="liste"><a href="promotion.html" target="self" >Promotion</a></li>
-     			 <li class="liste"><a href="commande.html" target="self" >Commande</a></li>
-    			  <li class="liste"><a href="demande.html" target="self" >Demande</a></li>
+<nav class="liste-menu" id="liste-menu">
+      	<ul>
+      	        
+      	    <li class="liste"><a href="index.html"><span>Acceuille</span></a></li>
+      			<li class="liste"><a href="produit.html"><span>Produit</span></a></li>
+     			 <li class="liste"><a href="services.html"><span>Services</span></a></li>
+     			 <li class="liste"><a href="commande.html"><span>Commande</span></a></li>
+    			  <li class="liste"><a href="demande.html"><span>Demande</span></a></li>
    			 </ul>
-		 </ul>
-		 </ul>
-</div>
-   	
+   			     
+   			 </nav>
+   			 
    
-  </header>	
+  </header>
+  <!-- bouton menu -->       
+            <button id="menu_show" style="display:inline"; onclick="menuShow();">
+                </button>
+    
+<button id="menu_hidden" class="menu_hidden" style="display:none;" onclick="menuHide();">
+    </button>
 
+    <div class="entete-sevices">
+    <h1>Donateur</h1>
+        <p><b>Nous sommes très heureux de recevoir vos dons</b></p>
+    </div>
+    
     <section>
-  <div class="introduction">
+  <div class="boite-section">
     <p>Nous vous remercions de l'intérêt que vous portez à nos services. Actuellement, le service que vous recherchez n'est pas encore disponible. Cependant, nous mettons tout en œuvre pour le rendre accessible dans les meilleurs délais.</p>
 
     <p>Nous travaillons activement à sa mise en place et vous tiendrons informé(e) dès qu'il sera disponible. Nous vous remercions de votre patience et de votre compréhension durant ce processus.</p>
@@ -52,12 +61,13 @@
 	
     
 <footer class="donation">
-	<p>&copy; &reg; 2025 Merci d'avoir fait un don</p>
+	<p>&copy; <script>document.write(new Date().getFullYear())</script> Merci d'avoir fait un don</p>
 	<p>Votre soutien nous aide beaucoup</p>
+	
+	    
 	<div class="resau-social" >
  	
-       <a href="tel:+50946121271" ><img class="social-link" src="icon/phone.png" ></a>
-    <a href="sms:+50946121271"><img class="social-link" src="icon/sms.png"></a>
+       
     <a href="mailto: majoredson16@gmail.com" ><img class="social-link" src="icon/mail.png"></a>
     <a href="https://wa.me/50946121271?text=Bonjour%20je%20souhaite%20vous%20contacter" ><img class="social-link" src="icon/whatsapp.png"></a>
     <a href="https://m.me/major edson?text=Bonjour%20je%20souhaite%20vous%20contacter" target="_blank" ><img class="social-link" src="icon/messenger.png"></a>
@@ -66,7 +76,7 @@
     <a href="https://t.me/edson major" target="_blank" ><img class="social-link" src="icon/telegram.png"></a>
     <a href="https://www.youtube.com/channel/sublima" target="_blank" ><img class="social-link" src="icon/youtube.png"></a>
     </div>
-    
+
 </footer>
 <script src="js/action.js"></script>
 </body>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    	<title>Feedback</title>
+  <link rel="icon" href="icon/sublima.ico"/>
+  <link rel="stylesheet" type="text/css" href="css/home.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/body.css"/>
+  <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+</head>
+
+<body>
+<header>
+
+
+    <div class="menu-header">
+     <a href="index.html"><img src="icon/sublima.png" class="logo" alt="Home"></a>
+     	
+     <h1 class="sublima">SUBLIMA</h1>
+   </div>
+   
+<nav class="liste-menu" id="liste-menu">
+    <ul>
+      			<li class="liste"><a href="index.html"><span>Acceuille</span></a></li>
+      			<li class="liste"><a href="produit.html"><span>Produit</span></a></li>
+     			 <li class="liste"><a href="services.html"><span>Services</span></a></li>
+     			 <li class="liste"><a href="commande.html"><span>Commande</span></a></li>
+    			  <li class="liste"><a href="demande.html"><span>Demande</span></a></li>
+   			 </ul>
+   			     
+   			 </nav>
+   			 
+   
+  </header>
+  <!-- bouton menu -->       
+            <button id="menu_show" style="display:inline"; onclick="menuShow();">
+                </button>
+    
+<button id="menu_hidden" class="menu_hidden" style="display:none;" onclick="menuHide();">
+    </button>
+    
+    
+  <div class="boite-section">
+      <h1>feedback</h1>
+    <p>Nous vous remercions de l'intérêt que vous portez à nos services.</p>
+
+    <p>Nous allons vous demander de remplir un formulaire, Nous vous remercions de votre patience et de votre compréhension durant ce processus.</p>
+   <form method="post" class="formulaire" id="formulaire"action="traitement.js" >
+         
+     <div class="requete">
+         <h3><label>formulaires de retour utilisateur</label></h3>
+         <br>
+          <label>Choisissez le sujet.</label><br>
+           <div class=" radio-bouton">     
+            <input name="choix" type="radio" id="sujet" value="sujet"  /> <label for="sujet" > Présentation du site</labe><br>
+            <input name="choix" type="radio" id="sujet1" value="sujet1" /> <label for="sujet1" >La qualité des Produits</label><br>
+            <input name="choix" type="radio" id="sujet2" value="sujet2" /> <label for="sujet2">La qualité des services</label><br>
+            <input name="choix" type="radio" id="sujet3" value="sujet3" /> <label for="sujet3">Le prix des services et produits</label><br>
+            <input name="choix" type="radio" id="sujet4" value="sujet4" /> <label for="sujet4">La réponse des demandes</label><br>
+            <input name="choix" type="radio" id="sujet5" value="sujet5" /> <label for="sujet5">Demande d'ajout de services ou produits</label><br>
+            <input name="choix" type="radio" id="sujet6" value="sujet6" /> <label for="sujet6">Autres sujets</label>
+            </div>
+            <br>
+            <br>
+            <textarea value="requete-text" id="requete-text" class="requete-text" placeholder="Ecrivez toutes vos requêtes, compliment, déception" rows="12" cols="31" ></textarea><br>
+                </p>
+            <label>Nous allons vous répondre par Email. </label><br>
+            <br>
+                <br>
+            <div> <button type="button" value="" id="bouton-soumetre" class="bouton-soumetre" onclick="sendFeedback();">Soumetre</button>
+            <p id="reponse-soumetre">?</p>
+            </div>
+            </div>
+        </form>
+
+    <p>Nous restons à votre disposition pour toute autre information ou question.</p>
+  </div>
+	
+	
+    
+<footer class="footer">
+	<p>&copy;&nbsp;<script>document.write(new Date().getFullYear())</script> </p>
+	<p>Merci pour vos remarque, votre feedback nous aides beaucoup. Vous pouvez nous contacter directement par téléphone</p>
+	
+	    
+	<div class="resau-social" >
+	    
+	        
+	    <a href="mailto: majoredson16@gmail.com" ><img class="social-link" src="icon/mail.png"></a>
+    <a href="https://wa.me/50946121271?text=Bonjour%20je%20souhaite%20vous%20contacter" ><img class="social-link" src="icon/whatsapp.png"></a>
+    <a href="https://m.me/major edson?text=Bonjour%20je%20souhaite%20vous%20contacter" target="_blank" ><img class="social-link" src="icon/messenger.png"></a>
+    
+    <a href="https://www.instagram.com/username" target="_blank" ><img class="social-link" src="icon/instagram.png"></a>
+    <a href="https://t.me/edson major" target="_blank" ><img class="social-link" src="icon/telegram.png"></a>
+    <a href="https://www.youtube.com/channel/sublima" target="_blank" ><img class="social-link" src="icon/youtube.png"></a>
+    </div>
+
+</footer>
+<script src="js/action.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     	<title>Commande</title>
-  <link rel="icon" href="icon/sublima.png"  />
+  <link rel="icon" href="icon/sublima.ico"/>
   <link rel="stylesheet" type="text/css" href="css/home.css" media="all" />
   <link rel="stylesheet" type="text/css" href="css/body.css"/>
   <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
@@ -16,57 +16,52 @@
 
 <body>
 <header>
-	   <div class="menu-header">
-     <a href="index.html"><img src="icon/sublima.png" class="logo" alt=""></a>
+	<div class="menu-header">
+     <a href="index.html"><img src="icon/sublima.png" class="logo" alt="Home"></a>
      	
-     <h1 class="titre1">SUBLIMA</h1>
+     <h1 class="sublima">SUBLIMA</h1>
    </div>
    
-   <div>
+<nav class="liste-menu" id="liste-menu" >
+    <ul>
+      			<li class="liste"><a href="index.html"><span>Acceuille</span></a></li>
+      			<li class="liste"><a href="produit.html"><span>Produit</span></a></li>
+     			 <li class="liste"><a href="services.html"><span>Services</span></a></li>
+     			 <li class="liste"><a class="accent" href="commande.html"><span>Commande</span></a></li>
+    			  <li class="liste"><a href="demande.html"><span>Demande</span></a></li>
+   		</ul>
    		
-   	<ul>
-   		<ul class="menu_deroulant"><a  class="menu" href="#">MENU</a>
-			<ul class="liste-menu" >
-      			<li class="liste"><a href="index.html" target="self" >Acceuille</a></li>
-      			<li class="liste"><a href="produit.html" target="self" >Produit</a></li>
-     			 <li class="liste"><a href="promotion.html" target="self" >Promotion</a></li>
-     			 	
-     			 <li class="liste"><a class="accent" href="commande.html" target="self" >Commande</a></li>
-     			 	
-     			 <li class="liste"><a href="demande.html" target="self" >Demande</a></li>
-   			 </ul>
-   			 </ul>
-		 </ul>
-</div>
-   
-  </header>	
-      <section>
-  <div class="introduction">
+   		    
+   		</nav>
+  </header>
+  <!-- bouton menu -->       
+            <button id="menu_show" style="display:inline"; onclick="menuShow();">
+                </button>
+    
+<button id="menu_hidden" class="menu_hidden" style="display:none;" onclick="menuHide();">
+    </button>
+ <div class="entete-sevices">
+    <h1>commande</h1>
+        <p><b>Nous sommes très heureux de poursuivre cette commande </b></p>
+    </div> 	
+ <div class="boite-section">
     <p>Nous vous remercions de l'intérêt que vous portez à nos services. Actuellement, le service que vous recherchez n'est pas encore disponible. Cependant, nous mettons tout en œuvre pour le rendre accessible dans les meilleurs délais.</p>
 
     <p>Nous travaillons activement à sa mise en place et vous tiendrons informé(e) dès qu'il sera disponible. Nous vous remercions de votre patience et de votre compréhension durant ce processus.</p>
 
     <p>Nous restons à votre disposition pour toute autre information ou question, et nous espérons pouvoir vous offrir ce service très prochainement.</p>
   </div>
-</section>	
- 
                    
-  
-  
-  
-  
- <footer class="footer">
-    <p class="merci">&copy; 2025 Merci d'avoir visite SUBLIMA<br>
-    		
-    	<span>Si vous voulez nous soutenir <a class="click" href="donateur.html">click ici</a></span>
-    	
-    </p>
+  <footer class="footer">
         
-    <div class="resau-social" >
- 	
-       <a href="tel:+50946121271" ><img class="social-link" src="icon/phone.png" ></a>
-    <a href="sms:+50946121271"><img class="social-link" src="icon/sms.png"></a>
-    <a href="mailto: majoredson16@gmail.com" ><img class="social-link" src="icon/mail.png"></a>
+    <p class="merci">&copy;&nbsp;<script>document.write(new Date().getFullYear())</script> Merci d'avoir visite SUBLIMA<br>
+    		
+    		
+    </p>
+  <div class="resau-social" >
+      
+          
+      <a href="mailto: majoredson16@gmail.com" ><img class="social-link" src="icon/mail.png"></a>
     <a href="https://wa.me/50946121271?text=Bonjour%20je%20souhaite%20vous%20contacter" ><img class="social-link" src="icon/whatsapp.png"></a>
     <a href="https://m.me/major edson?text=Bonjour%20je%20souhaite%20vous%20contacter" target="_blank" ><img class="social-link" src="icon/messenger.png"></a>
     
@@ -74,8 +69,9 @@
     <a href="https://t.me/edson major" target="_blank" ><img class="social-link" src="icon/telegram.png"></a>
     <a href="https://www.youtube.com/channel/sublima" target="_blank" ><img class="social-link" src="icon/youtube.png"></a>
     </div>
-  
   </footer>
-  <script src="js/action.js"></script>
+    
+    
+<script src="js/action.js"></script>
 </body>
 </html>

@@ -5,78 +5,123 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    	<title>Page principale sublima</title>
-  <link rel="icon" href="icon/sublima.png"  />
+    	<title>Page Accueil Sublima</title>
+  <link rel="icon" href="icon/sublima.ico"/>
   <link rel="stylesheet" type="text/css" href="css/home.css" media="all" /><link rel="stylesheet" type="text/css" href="css/body.css"/>
   <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 </head>
-
 <body>
-	
 <header>
 	<div class="menu-header">
-     <a href="index.html"><img src="icon/sublima.png" class="logo" alt=""></a>
+     <a href="index.html"><img src="icon/sublima.png" class="logo" alt="Home"></a>
      	
-     <h1 class="titre1">SUBLIMA</h1>
+     <h1 class="sublima">SUBLIMA</h1>
    </div>
-<div>
-	<ul>
-		<ul class="menu_deroulant"><a  class="menu" href="#">MENU</a>
-		    	<ul class="liste-menu" >
-      			<li class="liste"><a class="accent" href="index.html" target="self" >Acceuille</a></li>
-      			<li class="liste"><a href="produit.html" target="self" >Produit</a></li>
-     			 <li class="liste"><a href="promotion.html"target="self" >Promotion</a></li>
-     			 <li class="liste"><a href="commande.html" target="self">Commande</a></li>
-    			  <li class="liste"><a href="demande.html" target="self" >Demande</a></li>
-   			 </ul>
-   			 	
-   			 </ul>
-		 </ul>
-</div>
-   	</header>
-  <section>
+   
+<nav class="liste-menu" id="liste-menu">
+    <ul>
+      			<li class="liste"> <a class="accent" href="index.html"><span>Acceuille</span></a></li>
+      			<li class="liste"><a href="produit.html"><span>Produit</span></a></li>
+     			 <li class="liste"><a href="services.html"><span>Services</span></a></li>
+     			 <li class="liste"><a href="commande.html"><span>Commande</span></a></li>
+    			  <li class="liste"><a href="demande.html"><span>Demande</span></a></li>
+   			 
+    			      </ul>
+    			  </nav>
+   			 
+   
+  </header>
+     <!-- bouton menu -->       
+            <button id="menu_show" style="display:inline"; onclick="menuShow();">
+                </button>
+    
+<button id="menu_hidden" class="menu_hidden" style="display:none;" onclick="menuHide();">
+    </button>
+  	
+    <p class="bienvenue" >Bienvenue à sublima</p>
  	
- 	<div class="introduction">
- 		<h1>Bienvenue à sublima</h1>	<p>nous sommes ravis que vous visitiez notre site web sublima.github.io. le staff est d'ores et deja prèt pour vous offrir leur services a temps voulu. </p>
+ 	<div class="boite-section">
  		
+ 		
+ 		<div class="date"><p class="date_complet" id="date_complet">Aujourd'hui on est&nbsp;<script>document.write(new Date().toLocaleDateString('fr-FR', {year: 'numeric', month: 'long', day: 'numeric', weekday: 'long'}))</script></p></div>
+ 		<p>nous sommes ravis que vous visitiez notre site web sublima.github.io. le staff est d'ores et deja prèt pour vous offrir leur services a temps voulu. </p>
  		</div>
- 	</section>
- 	   <section>
-  <div class="introduction">
-    <p>Bienvenue et merci de votre confiance. Nous sommes ravis de vous accueillir et de vous offrir une expérience exceptionnelle à travers nos services. Notre objectif est de répondre à vos besoins de manière personnalisée, en mettant à votre disposition une gamme complète de prestations de qualité.</p>
-
-<p>Dans un premier temps, nous serions heureux de vous présenter nos services : [mentionner les services spécifiques]. Nous nous engageons à mettre un point d'honneur à garantir votre satisfaction, en vous accompagnant de manière proactive et en étant toujours à l'écoute de vos attentes. Chaque service que nous offrons est conçu pour répondre aux exigences les plus élevées, et nous sommes convaincus que vous trouverez la solution adaptée à vos besoins.</p>
-
-<p>Nous sommes également disponibles pour vous fournir des conseils personnalisés et vous guider dans le choix des services qui vous conviendront le mieux. Notre équipe se tient prête à répondre à vos questions et à vous offrir un accompagnement complet tout au long de votre parcours avec nous.</p>
-
-<p>Cependant, veuillez noter qu'à la fin de cette interaction, nous ne serons pas immédiatement disponibles pour répondre à de nouvelles demandes. Nous vous invitons à nous contacter à un moment ultérieur si vous avez besoin d'assistance ou si vous souhaitez obtenir davantage d’informations. Nous serons heureux de vous apporter toute l'aide nécessaire dès que nous serons à nouveau disponibles.</p>
-
-<p>Nous vous remercions pour votre confiance et vous souhaitons une expérience agréable avec nos services. Nous restons à votre écoute pour toute question future et nous réjouissons de pouvoir collaborer avec vous prochainement.</p>
-
-  </div>
-</section>	
-  
- 
- 
-<footer class="footer">
-    <p class="merci">&copy; &reg; 2025 Merci d'avoir visite SUBLIMA<br>
-    		
-    	<span>Si vous voulez nous soutenir <a class="click" href="donateur.html">click ici</a></span>
-    	</p>
-    	
-   <div class="resau-social" >
  	
-       <a href="tel:+50946121271" ><img class="social-link" src="icon/phone.png" ></a>
-    <a href="sms:+50946121271"><img class="social-link" src="icon/sms.png"></a>
+ 	
+ 	<div class="boite-section">
+ 		<h2><a class="ref_entete" href="produit.html" >produit</a></h2>
+ 		    <div class="img-box">
+              <a class="ref_entete" href="produit.html" ><img src="image/produits.svg" alt="" /></a>
+              </div>
+ 		<p>les produits sont ici</p>
+ 		</div>
+ 	
+ 	<div class="boite-section">
+ 		<h2><a class="ref_entete" href="services.html" >services</a></h2>
+ 		       <div class="img-box">
+              <a class="ref_entete" href="services.html" ><img src="image/services.png" alt="" /></a>
+              </div> 
+ 		    <p> nos services sont dispo pours les service propose avec les conditions acceptables  </p>
+ 		</div>
+ 	
+ 	
+ 	<div class="boite-section">
+ 		<h2><a class="ref_entete" href="demande.html" >section demande de produits ou services</a></h2>
+ 		    <div class="img-box">
+              <a class="ref_entete" href="demande.html" ><img src="image/demande.png" alt="" /></a>
+              </div> 
+ 		<p>section demande de nouveau produit ou réintégrer un ancien produit ou services</p>
+ 		</div>
+ 	
+ 	<div class="boite-section">
+ 		<h2><a class="ref_entete" href="feedback.html" >Feedback</a></h2>
+ 		   <div class="img-box">
+              <a class="ref_entete" href="feedback.html" ><img src="image/feedback.png" alt="" /></a>
+              </div>  
+ 		<p>Nous sommes ravis, le staff est pret pour les feedback pour les services données . </p>
+ 		</div>
+ 	
+ <!--	<div class="boite-section">
+ 		    <h2><a class="ref_entete" href="comming-soon.html" >comming soon</a></h2>
+ 		    <div class="img-box">
+              <a class="ref_entete" href="comming-soon.html" ><img src="image/comming-soon.svg" alt="" /></a>
+              </div> 
+     	<p>A venir</p>
+     	</div> -->
+     	
+ 		<div class="boite-section">
+ 		    <h2><a class="ref_entete"  >comming soon</a></h2>
+ 		    <div class="img-box">
+              <a class="ref_entete"  ><img src="image/comming-soon.svg" alt="" /></a>
+              </div> 
+     	<p>A venir</p>
+     	</div>
+     	    
+     	</div>
+	
+     	
+     	
+<footer class="footer">
+        
+    <p class="merci">&copy;&nbsp;<script>document.write(new Date().getFullYear())</script><span id="date_footer" ></span> Merci d'avoir visite SUBLIMA<br>
+    		
+    	
+    </p>
+  <div class="resau-social" >
+ 	
+       
     <a href="mailto: majoredson16@gmail.com" ><img class="social-link" src="icon/mail.png"></a>
     <a href="https://wa.me/50946121271?text=Bonjour%20je%20souhaite%20vous%20contacter" ><img class="social-link" src="icon/whatsapp.png"></a>
     <a href="https://m.me/major edson?text=Bonjour%20je%20souhaite%20vous%20contacter" target="_blank" ><img class="social-link" src="icon/messenger.png"></a>
     
-    <a href="https://www.instagram.com/username" target="_blank" ><img class="social-link" src="icon/instagram.png"></a>
+    <a href="https://www.instagram.com/shifu_12" target="_blank" ><img class="social-link" src="icon/instagram.png"></a>
     <a href="https://t.me/edson major" target="_blank" ><img class="social-link" src="icon/telegram.png"></a>
     <a href="https://www.youtube.com/channel/sublima" target="_blank" ><img class="social-link" src="icon/youtube.png"></a>
     </div>
-    
   </footer>
-  </body>
+  
+<script src="js/action.js"></script>
+
+
+</body>
 </html>
