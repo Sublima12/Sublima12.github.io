@@ -73,7 +73,7 @@ header h1 {
 	}
 	
 
-.liste-menu {
+.liste-menu ul {
 	display:flex;
 	justify-content: space-evenly;
 	list-style: none;
