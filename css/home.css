@@ -1,93 +1,161 @@
-
-
-html,body{
-	background-color: #f4f4f4;
-    margin: 0;
+﻿html,body{
+	background-color: #f4f4f4; margin: 0;
+    }
+    
+    a {
+    text-decoration: none;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        color: black; text-align: center;  text-transform: uppercase;
+	}
+	..bienvenue {
+	    margin: 3px 10px;
+	    font-style: cambria;
+	    font-size: 30px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    color: black;
+	    font-weight: bold;
+	}
+	
+	.ref_entete {
+    text-decoration: none; text-align: center; color: black;
 }
+.date {
+		    padding-top: 5px;
+		    }
+	.date_complet {
+		   /* text-transform: capitalize;*/
+		    font-size: 20px;
+		    color: black;
+		    }
+
 /* style Header début*/
-header {
-	margin: 0;
-		background-color: white;
-		border-radius: 5px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		}
+
+header .logo {
+		margin: 20px; align-items: center; height: 70px; width: 150px;
+	}
+	header {
+	    position: sticky;
+	    top: 0px;
+	    margin: 0px;
+	    background-color: white;
+	    border-radius: 5px;
+	    box-shadow: 0 4px 5px #747474;
+	    -webkit-box-shadow: 0 4px 5px #747474;
+	    }
 		header .menu-header {
-	display:flex;
-	align-items: center;
-	}
-	header img {
-	height: 30px;
-	width: 50px; 
-	}
+		    display:flex;
+		    align-items: center;
+		    }
 header h1 {
-	font-size: 22px;
+    position: fixed;
+	top: 6px;
+	left: 200px;
+	font-size: 50px;
 	text-decoration:none;
 	color: black;
-}
+	}
 /* off menu*/
 .menu {
 	text-decoration: none;
 	font-size: 0px;
+	}
+
+#menu_show {
+	display: none;
 	border: none;
 }
+
+#menu_hidden {
+	display: none;
+	border: none;
+	}
+	
 
 .liste-menu {
 	display:flex;
 	justify-content: space-evenly;
 	list-style: none;
-color: rgb(13, 15, 15);
- /*margin: 10px auto;*/
-}
-.liste-menu li a {
+	color: rgb(13, 15, 15);
+	/*margin: 10px auto;*/
+	}
+	.liste-menu li {
+		list-style: none;
+		}
+.liste-menu li a span {
 	font-size: 20px;
-font-family: Cambria;
-text-decoration: none;
-color: black;
-}
-.liste-menu li a:hover {
-font-family: Cambria;
-color: rgb(211, 55, 55);
-text-decoration: none;
-color: red;
-}
-.liste-menu li a:active {
-font-family: Cambria;
-color: rgb(211, 55, 55);
-text-decoration: none;
-color: red;
-text-shadow: 0px 1px 10px #d15151;
+	font-family: Cambria;
+	text-decoration: none;
+	color: black;
+	}
+.liste-menu li a span:hover {
+    font-size: 20px;
+    font-family: Cambria;
+    color: rgb(211, 55, 55);
+    text-decoration: none;
+    color: red;
+    }
+.liste-menu li a span:active {
+	font-size: 20px;
+	font-family: Cambria;
+	color: rgb(211, 55, 55);
+	text-decoration: none;
+	text-shadow: 0px 1px 10px #d15151;
 }
 
-.accent {
-	padding-bottom: 1px;
+.liste .accent span {
+	padding-bottom: 0px;
 	padding-left: 5px;
 	padding-right: 5px;
-	background-color: whitesmoke;
+	background-color: black;
+	border: solid 1.1px ;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
 	border-bottom: 0px;
-	box-shadow: 0px -1px 10px #383838;
-	font-size: 30px;
+	border-color: black;
 	font-style: cambria;
-}
-.accent:hover {
-	padding-bottom: 1px;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	}
+
+.liste .accent span:hover {
+	padding-bottom: 0px;
 	padding-left: 5px;
 	padding-right: 5px;
-	background-color: hsl(152, 152, 20);
+	background-color: black;
+	border: solid 1.1px ;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
 	border-bottom: 0px;
-	box-shadow: 0px -1px 20px #9b6262;
-	font-size: 30px;
+	border-color:black ;
 	font-style: cambria;
-}
-
-
+	font-size: 30px;
+	color: red;
+	text-decoration: none;
+	}
+.liste .accent span:active {
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: black;
+	border: solid 1.1px ;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+	border-bottom: 0px;
+	border-color:black ;
+	font-style: cambria;
+	font-size:30px;
+	color: blue;
+	text-decoration: none;
+	}
 
 
 
@@ -95,24 +163,85 @@ text-shadow: 0px 1px 10px #d15151;
  
 
 
+
 /*style pour les titre et section debut */
-.introduction {
-	margin: 30px;
+
+
+
+/* services début */
+.entete-sevices{
+    margin: 30px;
 	padding: 5px;
 	font-size: 14px;
 	background-color: white;
-border-radius:10px;
+	border-radius:10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+.entete-sevices p {
+    font-size: 20px;
+    color: black;
 }
-h1 {
-	text-align: center;
-	text-transform: uppercase;
-}
+.boite-section {
+	margin: 20px;
+	padding: 5px;
+	background-color: white;
+	border-radius:10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+.boite-ombre {
+	margin: 30px;
+	padding: 5px;
+	background-color: white;
+	border-radius:10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+.boite-section p {
+    text-align: center;
+    font-size:14px;
+	padding: 5px;
+	color: black;
+	}
+	.boite-ombre p {
+    text-align: center;
+    font-size:13px;
+	padding: 2px;
+	color: black;
+	}
+	
+	.img-box{
+	    text-align: center;
+	    
+	}
+	.img-box img{
+	    height: 300px;
+	    width: 300px;
+	}
+/* services début */
+
+/* produit début */
 
 
-section {
-	display: grid;
-}
+/* produit fin */
+
+
+
+
+
+/* demande début */
+
+
+/* demande fin */
+
+
+
+
+
+/* commande début */
+
+
+/* commande fin */
 
  /* style pour les titre et section fin----------------------------------------*/
 
@@ -129,35 +258,26 @@ section {
 	/* pied de la page*/
 	
 	footer {
-		font-size: 14px;
-			color: white;
-			font-family: Cambria;
-			font-display: auto;
-			font-weight: normal;
-			text-align: center;
-            background-color: #2E2E2E;
-            padding: 1px;
-            }
-            .click{
-					color: #E40602;
-					text-decoration:none;
-					cursor: pointer;
-				}
-				.resau-social {
-				    bottom: 5px;
-				    left: 40%;
-	/*display: flex;
-	flex-direction: row;
-	justify-content: spcace-evenly;*/
-}
+	    font-size: 14px;
+	    color: white;
+	    font-family: Cambria;
+	    font-display: auto;
+	    font-weight: normal;
+	    text-align: center;
+	    background-color: #0e1538;
+	    padding: 1px;
+	    }
+	    .click{
+	        background-color: white; border-radius: 5px;
+	        color: green; text-decoration:none; cursor: pointer;
+	        }
 
-
+.resau-social {
+    display: flex; flex-direction: row; justify-content: center;
+    }   
 .social-link {
-    background-color: transparent;
-	border: none;
-	border-radius: 1px;
-	height: 30px;
-	width: 30px;
+    border-radius: 5%; background-color: transparent;
+	height: 30px; width: 30px;
 	}
 
 				
